@@ -1,0 +1,80 @@
+FUNCTION
+    Hasilkerucut() = double
+
+DEKLARASI
+    pil = int
+    jari2, tinggi : double
+
+DESKRIPASI
+
+    Begin
+
+    write ("Pilih Perhitungan Kerucut");
+    write ("[1] Luas Kerucut");
+    write ("[2] Volume Kerucut");
+    write ("[3] Kembali");
+    read (pil)
+    
+    if (pil==1) then;
+        write ("masukan jari2");
+        read (jari2);
+        write ("masukan tinggi");
+        read (tinggi);
+        Luas_Kerucut (jari2, tinggi);
+        
+        else;
+        if (pil==2) then;
+        write ("masukan jari2");
+        real (jari2);
+        write "(
+else;
+        if (pil==2) then;
+        write ("masukan jari2");
+        real (jari2);
+        write "(masukan tinggi");
+        read (tinggi);
+        Volume_Kerucut (jari2, tinggi);
+        
+        else;
+        if (pil==3) then;
+        
+        restart
+        
+        else;
+        write ("sistem eror")
+        
+    END    
+        
+        
+FUNCTION
+     Luas_Kerucut (jari2 : double, tinggi : double);
+     
+DEKLARASI
+     Luas : double;
+     selimut : double;
+     
+DESKRIPASI
+    Begin
+    
+    selimut = sqrt ((jari2*jari2*)+(tinggi*tinggi));
+    
+    Luas = 3.14 * jari2 * selimut + 3.14 * jari2 *     jari2;
+    
+    return (Luas);
+    
+    END
+    
+ FUNCTION
+    Volume_Kerucut (jari2 : double, tinggi : double);
+    
+DEKLARASI
+    Volume : double:
+    
+DESKRIPASI
+    Begin
+    
+    Volume = 1/3 * 3.14 * jari2 * jari2 * tinggi
+    
+    return
+    
+    END
